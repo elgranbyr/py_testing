@@ -29,6 +29,9 @@ class TestExample(unittest.TestCase):
         with pytest.raises(ValueError, match="El diccionario no puede estar vacío"):
             suma_dict({})
 
+    def test_cualquier_exception(self):
+        with pytest.raises(Exception):
+            suma_dict(None)
 
     @unittest.skip("Test temporal deshabilitado")
     def test_future_feature(self):
