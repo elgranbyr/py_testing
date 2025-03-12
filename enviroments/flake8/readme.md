@@ -83,8 +83,6 @@ Lint: https://lintlyci.github.io/Flake8Rules/
     exclude = .git
     ignore = E226,E302,E41,E203,W391,W292,W503
     max-line-length = 256
-    classmethod-decorators=classmethod
-    staticmethod-decorators=staticmethod
 
 ### Plugins
 
@@ -95,13 +93,10 @@ Puedes añadir nuevos plugins a tu instalación, para añadir uno nuevo usa pip 
     Ejemplo: pep8-naming
     https://github.com/PyCQA/pep8-naming
 
-    pip install pep8-naming
-    pip install flake8-annotations-complexity
-
 ## Configuración del Entorno
 
 Rama actual
-   
+
     1. En el nivel superior del repositorio encontrarás un archivo de configuración: tox.ini
     2. Todo el proyecto ha sido refactorizado para cumplir con el estilo de código pep8
 
@@ -134,9 +129,6 @@ Ejecutar Flake8
 
     1. Haz clic en el archivo o carpeta que quieres probar
     2. presiona ctrl+alt+x, si todo está bien el programa debería retornar sin errores
-
-   ![Logo GitHub](image/execution.PNG)
-
     3. puedes ejecutar usando el menú contextual
 
    ![Logo GitHub](image/menurun.PNG)
@@ -144,10 +136,43 @@ Ejecutar Flake8
 Verificar errores y corregirlos
 
 Después de ejecutar flake8 puedes verificarlo en la consola de tu IDE, los códigos de error describen el tipo de error pep8 y la línea y columna del archivo que lo produce
-![Logo GitHub](image/runfail.PNG)
+
 
 Refactorizar:
 
 Es muy fácil corregir errores, para hacerlo el desarrollador necesita usar el reformateo de código o la herramienta de sugerencias
 selecciona **menú..Código..Reformatear** CTR+Alt+L
 
+
+
+# AutoFix:
+Para auto-formatear y corregir automáticamente errores de estilo en Python, pueden usar autopep8 o black
+en este caso estamos usaremos autopep
+
+## Instalar autopep8
+    pip install autopep8
+
+## Para ver los cambios que se harían sin aplicarlos:
+    autopep8 --diff archivo.py
+
+## Para formatear un archivo:
+    autopep8 --in-place archivo.py
+    autopep8 --in-place --aggressive archivo.py
+
+
+
+## Para formatear todos los archivos Python en un directorio:
+
+    autopep8 --in-place --recursive .
+
+
+Al igual que en el caso anterior agregarlo al ide es muy simple ... puedes agregarlo como parte del grupo como otro external tool
+
+
+Plugins para Atributos, flakelint:
+
+    pip install flake8-pylint
+    pip install flake8-class-attributes-order
+
+
+para hacer el test reemplazar el archivo tox_decorators.ini en el root folder
