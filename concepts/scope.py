@@ -31,3 +31,4 @@ print("***** despues de la funcion:**********")
 
 print("\nlocals() <-> Global():")
 print(locals())  # Muestra x, y, y la función ejemplo
+print(globals())  # Muestra x, y, y la función ejemplo

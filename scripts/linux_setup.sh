@@ -15,6 +15,6 @@ if [ ! -d ${VENV_DIR} ]; then
 fi
 
 ACTIVATE_PATH="${VENV_DIR}/bin/activate"
-#source ${ACTIVATE_PATH}
+source ${ACTIVATE_PATH}
 
 #pip install -e .
