@@ -9,16 +9,8 @@ class obj:
     def mystaticfunction(namefile):
         pass
 
-
-
-
     def set_name(self, name):
         self.name = name
-
-
-
-
-
 
     def set_age(self, age):
         self.age = age
@@ -36,17 +28,3 @@ class obj:
     # Mal: Este método no usa 'self', debería ser estático
     def multiply_numbers(self, x, y):
         return x * y
-
-
-
-
-
-
-
-
-
-
-
-
-
-
