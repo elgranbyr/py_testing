@@ -10,7 +10,6 @@ Pytest es un framework de testing para Python que se basa en los siguientes conc
 
 1. **Assertions simples**: Utiliza el statement `assert` de Python para realizar verificaciones, sin necesidad de recordar métodos específicos de testing.
 
-
 2. **Fixtures**: Mecanismo para proporcionar datos o estados base que tus tests necesitan. Las fixtures pueden ser reutilizadas entre tests y se definen usando el decorador `@pytest.fixture`.
 
 3. **Marcadores (Markers)**: Permiten categorizar tests y ejecutarlos selectivamente. Por ejemplo: `@pytest.mark.slow` para tests lentos.

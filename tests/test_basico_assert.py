@@ -2,7 +2,7 @@ import unittest
 
 import pytest
 
-from enviroments.venv_lint.my_types import suma_dict
+from concepts.my_types import suma_dict
 
 
 class TestExample(unittest.TestCase):
