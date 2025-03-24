@@ -17,5 +17,5 @@ fi
 ACTIVATE_PATH="${VENV_DIR}/bin/activate"
 
 source ${ACTIVATE_PATH}
-pip install -e ".[dev,lint]"
+pip install -e ".[dev,lint,test]"
 

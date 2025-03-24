@@ -17,7 +17,7 @@ python -m venv "%VENV_DIR%"
 
 :: Activar el entorno virtual e instalar paquetes
 call "%VENV_DIR%\Scripts\activate.bat"
-pip install -e ".[dev,lint]"
+pip install -e ".[dev,lint,test]"
 
 
 endlocal

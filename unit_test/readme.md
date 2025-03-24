@@ -1,7 +1,7 @@
 # Existen tres tipos de tests:
 
 - Unit tests: Prueban una unidad del código por sí sola.
-- Integration tests: Prueban la interacción entre unidades.
+- Integration tests: Prueban la interacción entre compoentes.
 - End-to-end tests (o tests funcionales): Prueban la interacción entre múltiples unidades y el funcionamiento completo del sistema desde la perspectiva del usuario final.
 
 ## Core Concepts de Pytest

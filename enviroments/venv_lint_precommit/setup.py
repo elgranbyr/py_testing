@@ -20,20 +20,15 @@ INSTALL_REQUIRES = [
 EXTRAS_REQUIRE = {
     "dev": [
         "flake8>=6.0.0",
-        "flake8-docstrings>=1.7.0",
-        "flake8-bugbear>=23.3.12",
-        "flake8-comprehensions>=3.14.0",
-        "flake8-pylint>=0.1.3",
+        "flake8-annotations",
         "flake8-class-attributes-order>=0.1.3",
-        "flake8-annotations-complexity>=0.0.7",
         "pep8-naming>=0.13.3",
         "autopep8>=2.0.0",
         "black>=23.3.0",
-        "pre-commit>=3.3.0",
+        "pre-commit"
     ],
     "lint": [
         "mypy>=1.3.0",
-        "pylint>=2.17.4",
         "types-requests>=2.31.0",
         "types-python-dateutil>=2.8.19",
         "isort>=5.12.0",

@@ -18,11 +18,9 @@ py_testing/
 ```
 
 ## Guías
-- [README Principal](./README.md) - Documentación general del proyecto
-- [/concepts/README.md](concepts/readme.md) - Documentación de conceptos
-- [enviroments/venv_base/readme.md](enviroments/venv_base/README.md) - Documentación entornos virtuales base
-- [/enviroment/readme.md](enviroments/readme.md) - Documentación     entornos virtuales + linter
-- [/enviroment/flake8/readme.md](enviroments/flake8/readme.md) - Documentación flake8
+- [/concepts/README.md](./concepts/readme.md) - Documentación de conceptos
+- [/enviroment/readme.md](./enviroments/readme.md) - Documentación     entornos virtuales + linter
+- [/flake8/readme.md](./flake8/readme.md) - Documentación flake8
 - [/unit_test/README.md](unit_test/readme.md) - Documentación de pruebas
 
 

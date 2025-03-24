@@ -19,13 +19,28 @@ INSTALL_REQUIRES = [
 # Dependencias opcionales para desarrollo
 EXTRAS_REQUIRE = {
     "dev": [
-        "pytest>=7.0.0",
-        "pytest-cov>=3.0.0",
-        "black>=22.0.0",
-        "isort>=5.10.0",
-        "flake8>=4.0.0",
-        "autopep8",
-        "mypy>=0.950",
+        "flake8>=6.0.0",
+        "flake8-annotations",
+        "flake8-class-attributes-order>=0.1.3",
+        "pep8-naming>=0.13.3",
+        "autopep8>=2.0.0",
+        "black>=23.3.0",
+        "pre-commit"
+    ],
+    "lint": [
+        "mypy>=1.3.0",
+        "types-requests>=2.31.0",
+        "types-python-dateutil>=2.8.19",
+        "isort>=5.12.0",
+        "bandit>=1.7.5",
+    ],
+    "test": [
+        "pytest>=7.3.1",
+        "pytest-cov>=4.1.0",
+        "pytest-mock>=3.10.0",
+        "moto>=4.1.11",
+        "coverage>=7.2.7",
+        "faker>=19.2.0",
     ],
     "docs": [
         "sphinx>=4.5.0",
