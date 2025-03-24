@@ -108,13 +108,7 @@ El **teardown** es la fase de limpieza que se ejecuta después de que un test ha
        return request.param
    ```
 
-5. **Fixtures anidadas**:
-   ```python
-   @pytest.fixture
-   def usuario(conexion_db):
-       return conexion_db.crear_usuario()
-   ```
-#instalación de pytest
+# instalación de pytest
 
 ```bash
 # Instalación básica de pytest
