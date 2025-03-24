@@ -10,6 +10,7 @@ print(locals())  # En el scope global, locals() == globals()
 print("\nglobals():")
 print(globals())  # Muestra x, y, y la función ejemplo
 
+
 def ejemplo():
     # Variables locales
     a = 3

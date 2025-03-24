@@ -1,11 +1,10 @@
-
-import ducktype as dt
-from ducktype import *
-
 x = 1
 y = 2
+
+
 def ejemplo():
     pass
+
 
 print("****Fuera de la función:*****")
 print("\ndir():")

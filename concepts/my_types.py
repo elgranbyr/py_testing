@@ -1,4 +1,5 @@
-from typing import Any, Union, TypeVar, Callable, List, Dict
+from typing import Any, Union, TypeVar, Callable, List
+
 
 class c_suma:
     def __init__(self, a: int, b: int) -> int:
@@ -6,41 +7,46 @@ class c_suma:
         self.b = b
 
     def __call__(self) -> int:
-        return self.a + self.b 
-    
+        return self.a + self.b
+
     def __add__(self, other: 'c_suma') -> 'c_suma':
-        return c_suma(self.a + other.a, self.b + other.b)   
-
-
-
+        return c_suma(self.a + other.a, self.b + other.b)
 
 
 def suma(a: int, b: int) -> int:
     return a + b
 
+
 def suma_float(a: float, b: float) -> float:
     return a + b
-
 
 
 def suma_class_callable(a: Callable) -> str:
     return a()
 
+
 def suma_class(a: c_suma) -> str:
     return a()
+
 
 def suma_classany(a: Any) -> str:
     return a()
 
-def suma_class_varios_tipos(a: Union[any,c_suma]) -> str:
+
+def suma_class_varios_tipos(a: Union[any, c_suma]) -> str:
     return a()
 
+
 T = TypeVar('T')
+
+
 def suma_typevar(a: T, b: T) -> T:
     return a + b
 
+
 def suma_list(a: List[int]) -> int:
     return sum(a)
+
 
 def suma_dict(a: dict) -> int:
     if a is None:
@@ -49,9 +55,5 @@ def suma_dict(a: dict) -> int:
         raise TypeError("El argumento debe ser un diccionario")
     if not a:  # si el diccionario está vacío
         raise ValueError("El diccionario no puede estar vacío")
-    
-    return sum(a.values())  
 
-
-
-    
+    return sum(a.values())

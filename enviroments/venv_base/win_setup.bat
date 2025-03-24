@@ -17,6 +17,6 @@ python -m venv "%VENV_DIR%"
 
 :: Activar el entorno virtual y instalar el paquete
 call "%VENV_DIR%\Scripts\activate.bat"
-pip install -e .
+
 
 endlocal

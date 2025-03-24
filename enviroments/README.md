@@ -37,16 +37,72 @@ para el caso de black, se puede agregar la siguiente configuracion al archivo py
 line-length = 120
 ```
 
+# ./Enviroments
+En este folder encontrara 3 folder conrespondientes a la configuracion de entornos virtuales
 
+En cada folder encontrará el setup con archivos BAT o SH a utilizar para crear el entorno virtual tomar encuenta que estos folders contiene archivos de setup.py y tox.ini que deben colocarse en el root   
+```python
+./venv_base
+./venv_lint
+./venv_lint_precommit
+```
+ 
+
+#lint
+Tomar encuenta que en setup.py se estan instalando las dependencias de flake8, a continuacion encontrar un listado de posibles
+plugins con los que puede agregar al proceso de linter
+``` 
+pip install flake8-docstrings
+pip install flake8-annotations 
+
+
+[mypy]
+strict = True
+disallow_untyped_defs = True
+check_untyped_defs = True
+```
+
+Para typing es necesario agregar las librerias adicionales y sus validadores , a continaure encontrara los pip install asociacdos y un config de ejemplo
+```
+pip install mypy 
+pip install pytype
+```
+
+setup.cfg
+```
+[flake8]
+max-line-length = 88
+extend-ignore = E203
+select = ANN  # Habilitar checks de anotaciones
+
+[mypy]
+strict = True
+disallow_untyped_defs = True
+check_untyped_defs = True
+
+[pytype]
+inputs = src/
+python_version = 3.9
+```
 
 ## Linux
 
 ```bash
-./scripts/venv_lint/linux_setup.sh
+./enviroments/venv_base/linux_setup.sh
+./enviroments/venv_lint/linux_setup.sh
+./enviroments/venv_lint_precommit/linux_setup.sh
 ```
 
 ## Windows
 
 ```batch
-./scripts/venv_lint/win_setup.bat
+./enviroments/venv_base/win_setup.bat
+./enviroments/venv_lint/win_setup.bat
+./enviroments/venv_lint_precommit/win_setup.bat
+```
+
+Nota: cada setup executa la instrucción de instalación dependiendo de su entorno
+por ejemplo:
+```
+pip install -e ".[dev,lint,test]"
 ```

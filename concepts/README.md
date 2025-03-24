@@ -5,8 +5,9 @@
     import interpretado
     print("Tercera línea en interpretadoimport.py")
 
-[Ejemplo Interpretado ](concepts/interpretado.py)
-[Ejemplo Import ](concepts/interpretadoimport.py)
+[Ejemplo Interpretado ](./interpretado.py)
+
+[Ejemplo Import ](./interpretadoimport.py)
 
 ## Python no es un lenguaje fuertemente tipado, los tipos de datos pueden cambiar dinamicamente. 
 
@@ -15,14 +16,14 @@
     numero = "string" 
     print(f"\ncadena: {numero} (tipo: {type(numero)})")
     
-[Ejemplo Tipado ](concepts/tipado.py)
+[Ejemplo Tipado ](./tipado.py)
 
 ## Python obedece al paradigma duck typing, lo que significa que el codigo se ejecuta si cumple con la interfaz, no necesariamente el tipo de dato.
 
-[Ejemplo Docktype ](concepts/ducktype.py)
+[Ejemplo Docktype ](./ducktype.py)
 
 ## Python no es un lenguaje puramente orientado a objetos sino mas bien multi-paradigma, sin embargo todo en python es un objeto.
-[Ejemplo Docktype ](concepts/objects.py)
+[Ejemplo Docktype ](./objects.py)
 
  
 ## Modulos vs Clases:
@@ -33,9 +34,9 @@
     globals()
     locals()    
 
-[Ejemplo Scope ](concepts/scope.py)
+[Ejemplo Scope ](./scope.py)
 
-[Ejemplo Scope Imports ](concepts/scopeimport.py)
+[Ejemplo Scope Imports ](./scopeimport.py)
 
 
 ## Idempotencia:
@@ -48,6 +49,6 @@ Una funcion es idempotente si el resultado de la funcion es el mismo independien
         print(suma(1,2))
         print(suma(1,2))
     
-[Ejemplo Idempotencia ](concepts/idempotencia.py)
+[Ejemplo Idempotencia ](./idempotencia.py)
 
     
